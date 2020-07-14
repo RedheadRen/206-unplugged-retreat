@@ -86,6 +86,183 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*---------- Base Header - Footer Styles ---------*/
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*** Header Styles ***/
+header {
+
+}
+
+header .content-wrapper {
+  display: flex;
+}
+
+header figure {
+
+}
+
+.header-divider{
+
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+
+}
+
+
+/*---------- Mobile Styles ----------*/
+/*** HOMEPAGE ***/
+.hero-area {
+  display: flex;
+}
+
+.hero-area .content-wrapper {
+
+}
+
+aside {
+  display: flex;
+}
+
+aside .content-wrapper {
+
+}
+
+.form-description {
+
+}
+
+.form {
+
+}
+
+.features {
+  display: flex;
+}
+
+.features .content-wrapper {
+
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fontawesome-icon {
+
+}
+
+.features-item-description {
+
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews .content-wrapper {
+
+}
+
+.reviews article {
+
+}
+
+/*** ABOUT PAGE ***/
+.mission {
+  display: flex;
+}
+
+.mission .content-wrapper {
+
+}
+ .mission-content {
+
+ }
+
+ .map {
+
+ }
+
+ .contact-section {
+  display: flex;
+ }
+
+ .contact-section .content-wrapper {
+
+ }
+
+ .general-contact {
+
+ }
+
+/*** FAQ PAGE ***/
+.faq {
+  display: flex;
+}
+
+.faq .content-wrapper {
+  display: flex;
+}
+
+.faq-content {
+
+}
+
+/*** Footer ***/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .content-wrapper {
+
+}
+
+.footer-content {
+
+}
+
+footer .contact {
+  
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+}
+
+.copyright {
+
+}
+
 
 /* ==========================================================================
    Helper classes

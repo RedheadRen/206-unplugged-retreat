@@ -92,6 +92,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 /*** Header Styles ***/
@@ -101,6 +102,9 @@ header {
 
 header .content-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header figure {
@@ -113,10 +117,15 @@ header figure {
 
 header nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header nav ul li {
@@ -128,6 +137,9 @@ header nav ul li {
 /*** HOMEPAGE ***/
 .hero-area {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .hero-area .content-wrapper {
@@ -136,6 +148,9 @@ header nav ul li {
 
 aside {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 aside .content-wrapper {
@@ -152,6 +167,9 @@ aside .content-wrapper {
 
 .features {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .features .content-wrapper {
@@ -162,6 +180,7 @@ aside .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .fontawesome-icon {
@@ -176,6 +195,7 @@ aside .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .reviews .content-wrapper {
@@ -189,26 +209,33 @@ aside .content-wrapper {
 /*** ABOUT PAGE ***/
 .mission {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .mission .content-wrapper {
 
 }
- .mission-content {
 
- }
+.mission-content {
 
- .map {
+}
 
- }
+.map {
 
- .contact-section {
+}
+
+.contact-section {
   display: flex;
- }
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
 
- .contact-section .content-wrapper {
+.contact-section .content-wrapper {
 
- }
+}
 
  .general-contact {
 
@@ -217,10 +244,14 @@ aside .content-wrapper {
 /*** FAQ PAGE ***/
 .faq {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .faq .content-wrapper {
   display: flex;
+  flex-flow: row wrap;
 }
 
 .faq-content {
@@ -229,9 +260,7 @@ aside .content-wrapper {
 
 /*** Footer ***/
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: ;
 }
 
 footer .content-wrapper {
@@ -256,7 +285,6 @@ footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row;
 }
 
 .copyright {

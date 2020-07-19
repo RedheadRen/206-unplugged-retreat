@@ -123,13 +123,18 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 19px 0;
   width: 44%;
 }
 
 header nav ul li {
+  list-style: none;
+  text-transform: uppercase;
+}
 
+header nav ul li a {
+  text-decoration: none;
 }
 
 footer {
@@ -175,11 +180,10 @@ footer .social-icons p {
 
 }
 
-
-/*---------- Mobile Styles - HOMPAGE----------*/
+/*---------- MOBILE STYLES HERE ----------*/
+/*----- HOMPAGE -----*/
 
 /** Hero Area **/
-
 .hero-area {
   display: flex;
   justify-content: center;
@@ -189,8 +193,8 @@ footer .social-icons p {
 .hero-area .content-wrapper {
   width: 88%;
 }
- /** Aside **/
 
+ /** Aside **/
 aside {
   display: flex;
   justify-content: center;
@@ -211,7 +215,6 @@ aside .content-wrapper {
 }
 
 /** Features **/
-
 .features {
   display: flex;
   justify-content: center;
@@ -250,7 +253,6 @@ aside .content-wrapper {
 }
 
 /** Reviews **/
-
 .reviews {
   display: flex;
   justify-content: center;
@@ -261,20 +263,17 @@ aside .content-wrapper {
   width: 88%;
 }
 
-.reviews article h3{
+.reviews article h3 {
   width: 48%;
 }
 
 .reviews article p {
   margin: 0;
-  padding: 15px 20px 33px 21px ;
 }
 
-
-/*---------- Mobile Styles - ABOUT PAGE ----------*/
+/*----- ABOUT PAGE -----*/
 
 /** Mission **/
-
 .mission {
   display: flex;
   justify-content: center;
@@ -291,13 +290,11 @@ aside .content-wrapper {
 }
 
 /** Map **/
-
 .map {
 
 }
 
 /** Contact **/
-
 .contact-section {
   display: flex;
   justify-content: center;
@@ -313,7 +310,7 @@ aside .content-wrapper {
 
 }
 
-/*---------- Mobile Styles - FAQ PAGE ----------*/
+/*----- FAQ PAGE -----*/
 .faq {
   display: flex;
   justify-content: center;
@@ -427,7 +424,7 @@ aside .content-wrapper {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-    /*Tablet Styles Here*/
+    /*----- TABLET STYLES HERE -----*/
     .content-wrapper {
       max-width: 640px;
       margin: 100px 0;
@@ -476,12 +473,14 @@ aside .content-wrapper {
     /*Features*/
     .features article {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      flex-basis: 20%;
       flex-flow: row wrap;
     }
 
     .features .features-item-description {
+      margin: 34px 125px;
       width: 32%;
     }
 
@@ -494,6 +493,41 @@ aside .content-wrapper {
 
     .reviews article div {
       width: 50%;
+    }
+
+    /*FAQ*/
+    .faq .content-wrapper {
+      justify-content: space-between;
+    }
+
+    .faq-content {
+      flex-basis: 40%;
+    }
+
+    .faq h2 {
+      width: 100%;
+    }
+
+    /*ABOUT*/
+    .mission-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .mission-content p {
+      margin: 0;
+      width: 40%;
+    }
+
+    .contact-section .content-wrapper h2 {
+      width: 66%;
+    }
+
+    .general-contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
     }
 
     /*Footer*/
@@ -518,7 +552,7 @@ aside .content-wrapper {
 }
 
 @media only screen and (min-width: 1200px) {
-    /*Desktop Styles Here*/
+    /*----- DESKTOP STYLES HERE -----*/
 
     .content-wrapper {
       max-width: 960px;

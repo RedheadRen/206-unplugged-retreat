@@ -93,7 +93,9 @@ html {
   font-size: 16px;
 }
 
-body{
+body {
+  background-color: #202322;
+  color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
 }
@@ -101,23 +103,22 @@ body{
 ul,
 ol {
   list-style-type: none;
+  text-transform: uppercase;
+  padding: 0;
 }
 
 a {
   color: #e2e3ed;
+  font-weight: 700;
   text-decoration: none;
 }
 
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 3em;
-  line-height: 48px;
-}
-
+h1, 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
   line-height: 48px;
+  font-weight: 500;
 }
 
 h3,
@@ -125,6 +126,7 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
   line-height: 30px;
+  font-weight: 500;
 }
 
 p {
@@ -171,6 +173,7 @@ header .content-wrapper {
 }
 
 .header-divider {
+  color: #3a3a3a;
   height: 1px;
   margin: 10px 0 20px 0;
   width: 100%;
@@ -204,7 +207,17 @@ footer .content-wrapper {
 }
 
 footer .contact {
+  text-align: center;
   margin-bottom: 50px;
+}
+
+footer .contact h4,
+footer .social h4 {
+  margin: 0 0 20px 0;
+}
+
+footer .social {
+  text-align: center;
 }
 
 footer .social-icons {
@@ -236,10 +249,47 @@ footer .copyright {
 
 /** Aside **/
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside h3 {
+  font-size: 1.125em;
+  margin-top: 0;
+}
+
+
+aside .content-wrapper {
+  margin-top: 30px;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /** Features **/
@@ -250,6 +300,8 @@ aside {
 }
 
 .features h2 {
+  font-size: 1.875em;
+  text-align: left;
   margin-bottom: 60px;
 }
 
@@ -271,16 +323,20 @@ aside {
 
 /** Reviews **/
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
 .reviews h2 {
+  font-size: 1.875em;
+  line-height: 30px;
   margin-bottom: 40px;
 }
 
 .reviews h3 {
+  font-size: 1.125em;
   margin: 20px 0;
   width: 55%;
 }
@@ -289,10 +345,16 @@ aside {
 
 /** Mission **/
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.mission h2 {
+  font-size: 1.875em;
+  line-height: 35px;
 }
 
 /** Map **/
@@ -300,10 +362,21 @@ aside {
 
 /** Contact **/
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.contact-section h2 {
+  font-size: 1.875em;
+  line-height: 30px;
+}
+
+.contact-content h3 {
+  font-size: 1.125em;
+  margin: 20px 0 15px 0;
 }
 
 .contact-content p {
@@ -312,6 +385,7 @@ aside {
 
 /*---------- FAQ PAGE ----------*/
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +401,15 @@ aside {
 }
 
 .faq h2 {
+  font-size: 1.875em;
+  line-height: 30px;
   margin-bottom: 45px;
+}
+
+.faq h4 {
+  font-size: 1.125em;
+  line-height: 24px;
+  margin-bottom: 15px;
 }
 
 .faq-content {

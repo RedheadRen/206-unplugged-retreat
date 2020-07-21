@@ -94,39 +94,34 @@ html {
 }
 
 body {
-  background-color: #202322;
   color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  text-align: left;
 }
 
 ul,
 ol {
   list-style-type: none;
-  text-transform: uppercase;
-  padding: 0;
 }
 
 a {
   color: #e2e3ed;
-  font-weight: 700;
   text-decoration: none;
 }
 
-h1, 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
-  line-height: 48px;
+  font-size: 1.875em;
   font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
-  line-height: 30px;
+  font-size: 1.125em;
   font-weight: 500;
+  margin: 20px 0;
 }
 
 p {
@@ -135,11 +130,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -154,6 +149,7 @@ address {
    /*---------- Base Header - Footer Styles ---------*/
 header,
 footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,29 +168,46 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
 .header-divider {
-  color: #3a3a3a;
+  background: #3a3a3a;
   height: 1px;
   margin: 10px 0 20px 0;
   width: 100%;
 }
 
 header nav {
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  padding: 0;
   width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer p {
@@ -207,17 +220,7 @@ footer .content-wrapper {
 }
 
 footer .contact {
-  text-align: center;
   margin-bottom: 50px;
-}
-
-footer .contact h4,
-footer .social h4 {
-  margin: 0 0 20px 0;
-}
-
-footer .social {
-  text-align: center;
 }
 
 footer .social-icons {
@@ -242,9 +245,20 @@ footer .copyright {
 
 /** Hero Area **/
 .hero-area {
+  background: url('../img/hero-img.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /** Aside **/
@@ -255,12 +269,6 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 }
-
-aside h3 {
-  font-size: 1.125em;
-  margin-top: 0;
-}
-
 
 aside .content-wrapper {
   margin-top: 30px;
@@ -294,14 +302,14 @@ input[type=button] {
 
 /** Features **/
 .features {
+  background: url('../img/ammenities-img.jpg') center no-repeat #333333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
 .features h2 {
-  font-size: 1.875em;
-  text-align: left;
   margin-bottom: 60px;
 }
 
@@ -319,6 +327,7 @@ input[type=button] {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 /** Reviews **/
@@ -330,13 +339,11 @@ input[type=button] {
 }
 
 .reviews h2 {
-  font-size: 1.875em;
   line-height: 30px;
   margin-bottom: 40px;
 }
 
 .reviews h3 {
-  font-size: 1.125em;
   margin: 20px 0;
   width: 55%;
 }
@@ -401,15 +408,12 @@ input[type=button] {
 }
 
 .faq h2 {
-  font-size: 1.875em;
   line-height: 30px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .faq h4 {
-  font-size: 1.125em;
   line-height: 24px;
-  margin-bottom: 15px;
 }
 
 .faq-content {

@@ -641,10 +641,6 @@ input[type=button] {
       justify-content: space-between;
     }
 
-    .reviews figure {
-      width: 50%
-    }
-
     .reviews article figure,
     .reviews article div {
       width: 49%;
@@ -714,10 +710,27 @@ input[type=button] {
     h4 {
       font-size: 1.875em;
     }
-    
+
+    p {
+      font-size: 1.125em;
+      line-height: 1.33;
+    }
+
+    /*Header*/
+    header figure {
+      width: 30%;
+    }
+
+    header nav {
+      width: 15%;
+    }
+
+
+    /*****HOME PAGE*****/
     /*Hero Area*/
     .hero-area h1 {
-      width: 75%;
+      font-size: 3.75em;
+      width: 70%;
     }
 
     /*Aside*/
@@ -727,7 +740,21 @@ input[type=button] {
 
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
+      margin: 0;
       width: 33%;
+    }
+
+    aside h3 {
+      margin: 0 0 20px 0;
+    }
+
+    aside p {
+      width: 80%;
+    }
+
+    input[type=button] {
+      font-size: 1.5em;
+      padding: 15px 0;
     }
 
     /*Features*/
@@ -740,12 +767,32 @@ input[type=button] {
     }
 
     .features .features-item-description {
-      width: 33%;
+      width: 54%;
     }
 
     /*Reviews*/
+    .reviews h2 {
+      margin-top: 0;
+    }
+
+    .reviews article {
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .reviews article figure,
     .reviews article div {
-      width: 50%;
+      width: 49%;
+    }
+
+    .reviews h3 {
+      margin: 0;
+      width: 62%;
+    }
+
+    .reviews p {
+      width: 75%;
     }
 
     /***** FAQ *****/
@@ -753,10 +800,30 @@ input[type=button] {
       width: 100%;
     }
 
+    .faq p {
+      width: 80%;
+    }
+
     /***** ABOUT *****/
     .mission h2,
     .contact-section .content-wrapper h2 {
       width: 100%;
+    }
+
+    .mission-content {
+      width: 100%;
+    }
+
+    .mission h2 {
+      font-size: 3em;
+    }
+
+    .contact-section h2 {
+      line-height: 1.5;
+    }
+    
+    .contact-content div h3 {
+      margin: 0 0 40px 0;
     }
 }
 
